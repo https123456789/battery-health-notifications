@@ -2,10 +2,10 @@
 
 # https://gitlab.com/gitaarik/battery-health-notifications
 
-# It works on Pop OS 20.04 running GNOME 3.36.8: https://www.youtube.com/watch?v=kj7PusE9Hs4
+# This line is to make notify-send always work, also when run in a crontab.
+# https://askubuntu.com/questions/298608/notify-send-doesnt-work-from-crontab/346580#346580
 
-export $(xargs -0 -a "/proc/$(pgrep gnome-session -n -U $UID)/environ")
-# export $(xargs -0 -a "/proc/1000/environ")
+export $(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session | head -n 1)/environ | tr '\0' '\n')
 
 BATTERY_PATH=$(upower -e | grep battery)
 LINE_POWER_PATH=$(upower -e | grep line_power)

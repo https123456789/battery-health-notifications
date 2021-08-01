@@ -13,10 +13,20 @@ Original author: https://gitlab.com/gitaarik/battery-health-notifications
 	
 	$ cd battery-health-notifications
 	
-	$ chmod +x install.sh
+	$ sudo chmod +x install.sh
 	
 	$ ./install.sh
 	
+Or:
+
+	$ wget https://raw.githubusercontent.com/eddunic/battery-health-notifications/main/battery-health-notifications
+
+        $ sudo apt-get install libnotify-bin
+        
+        $ sudo chmod +x battery-health-notifications
+        
+        $ sudo cp battery-health-notifications /usr/bin/ 
+
 Then, add the script to your crontab (`crontab -e`):
 
 	* * * * * battery-health-notifications 

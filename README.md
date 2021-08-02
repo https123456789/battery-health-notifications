@@ -27,7 +27,7 @@ Or:
 
         $ sudo apt-get install libnotify-bin
         
-        $ sudo chmod +x battery-health-notifications
+        $ chmod +x battery-health-notifications
         
         $ sudo mv battery-health-notifications /usr/bin/ 
 

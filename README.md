@@ -11,7 +11,7 @@ Original author: https://gitlab.com/gitaarik/battery-health-notifications
 
 ## Installing 
 
-	$ git clone git@github.com:eddunic/battery-health-notifications.git
+	$ git clone git@github.com:eduardonbneves/battery-health-notifications.git
 	
 	$ cd battery-health-notifications
 	
@@ -21,7 +21,7 @@ Original author: https://gitlab.com/gitaarik/battery-health-notifications
 	
 Or:
 
-	$ wget https://raw.githubusercontent.com/eddunic/battery-health-notifications/main/battery-health-notifications
+	$ wget https://raw.githubusercontent.com/eduardonbneves/battery-health-notifications/main/battery-health-notifications
 
         $ sudo apt-get install libnotify-bin
         

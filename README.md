@@ -11,7 +11,7 @@ Original author: https://gitlab.com/gitaarik/battery-health-notifications
 
 ## Installing 
 
-	$ git clone git@github.com:eduardonbneves/battery-health-notifications.git
+	$ git clone https://github.com/eduardonbneves/battery-health-notifications.git
 	
 	$ cd battery-health-notifications
 	

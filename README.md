@@ -31,11 +31,11 @@ Or:
         
         $ sudo mv battery-health-notifications /usr/bin/ 
 
-Then, add the line below to your crontab using `crontab -e`:
+Then, add the line below to your crontab using `crontab -e` (if you followed the first method, this is not necessary):
 
 	* * * * * battery-health-notifications 
 	
-## Testing (Required if your desktop environment isn't GNOME)
+## Testing (required if your desktop environment isn't GNOME)
 
 Note: For testing, you can to change the battery's health percent directly in file `/usr/bin/battery-health-notifications`. 
 
@@ -43,7 +43,7 @@ Run:
 
 	$ battery-health-notifications
 
-If it shows nothing, it's alright. But if it doesn't, change name of desktop environment session. First, verify with this:
+If it shows nothing, it's alright. But if it doesn't, it's necessary to change name of desktop environment session. So, follow the steps below:
 
 ## Solution
 

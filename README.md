@@ -9,6 +9,8 @@ The script runs every minute.
 
 Original author: https://gitlab.com/gitaarik/battery-health-notifications
 
+Note: If your desktop environment isn't GNOME, follow the testing section too.
+
 ## Installing 
 
 	$ git clone https://github.com/eduardonbneves/battery-health-notifications.git
@@ -33,7 +35,7 @@ Then, add the line below to your crontab using `crontab -e`:
 
 	* * * * * battery-health-notifications 
 	
-## Testing
+## Testing (Required if your desktop environment isn't GNOME)
 
 Note: For testing, you can to change the battery's health percent directly in file `/usr/bin/battery-health-notifications`. 
 

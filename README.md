@@ -13,11 +13,9 @@ Note: If your desktop environment isn't GNOME, follow the testing section too.
 
 ## Installing 
 
-	$ git clone https://github.com/eduardonbneves/battery-health-notifications.git
+	$ git clone https://github.com/eduardonbneves/battery-health-notifications.git && cd battery-health-notifications
 	
-	$ cd battery-health-notifications
-	
-	$ sudo chmod +x install.sh
+	$ chmod +x install.sh
 	
 	$ ./install.sh
 	

@@ -15,17 +15,22 @@ Note: If your desktop environment isn't GNOME, follow the testing section too.
 
 	$ git clone https://github.com/eduardonbneves/battery-health-notifications.git && cd battery-health-notifications
 	
+	
 	$ chmod +x install.sh
+	
 	
 	$ ./install.sh
 	
 Or:
 
 	$ wget https://raw.githubusercontent.com/eduardonbneves/battery-health-notifications/main/battery-health-notifications
+	
 
         $ sudo apt-get install libnotify-bin
         
+        
         $ chmod +x battery-health-notifications
+        
         
         $ sudo mv battery-health-notifications /usr/bin/ 
 

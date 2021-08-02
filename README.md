@@ -29,7 +29,7 @@ Or:
         
         $ sudo chmod +x battery-health-notifications
         
-        $ sudo cp battery-health-notifications /usr/bin/ 
+        $ sudo mv battery-health-notifications /usr/bin/ 
 
 Then, add the line below to your crontab using `crontab -e`:
 

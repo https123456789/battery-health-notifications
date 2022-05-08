@@ -2,7 +2,6 @@
 
 # https://gitlab.com/gitaarik/battery-health-notifications
 
-# This line is to make notify-send always work, also when run in a crontab.
 # https://askubuntu.com/questions/298608/notify-send-doesnt-work-from-crontab/346580#346580
 
 export $(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session | head -n 1)/environ | tr '\0' '\n')

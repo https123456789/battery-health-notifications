@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# https://gitlab.com/gitaarik/battery-health-notifications
+# Original script: https://gitlab.com/gitaarik/battery-health-notifications
 
-# https://askubuntu.com/questions/298608/notify-send-doesnt-work-from-crontab/346580#346580
-
-export $(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session | head -n 1)/environ | tr '\0' '\n')
+# DBUS_SESSION_BUS_ADDRESS needs to be set for notify-send to work
+# we can just look up the pid of the dbus daemon and read the env var off it
+dbus_pid="$(pidof dbus-daemon | tr ' ' '\n' | head -n 1)"
+export $(cat /proc/$dbus_pid/environ 2>/dev/null | tr '\0' '\n' | grep DBUS)
 
 BATTERY_PATH=$(upower -e | grep battery)
 LINE_POWER_PATH=$(upower -e | grep line_power)

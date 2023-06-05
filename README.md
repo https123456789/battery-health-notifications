@@ -33,7 +33,7 @@ Run:
 
 	$ battery-health-notifications
 
-If there is output, then the script won't work. You can file a bug report [here](https://github.com/edudo678/battery-health-notifications/issues).
+If there is output, then the script won't work. You can file a bug report [here](https://github.com/https123456789/battery-health-notifications/issues).
 
 ## Tested Desktops
 

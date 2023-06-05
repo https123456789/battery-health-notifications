@@ -37,6 +37,5 @@ If there is output, then the script won't work. You can file a bug report [here]
 
 ## Tested Desktops
 
-- Ubuntu 19.04 running GNOME 3.32.1
-- Pop OS 20.04 running GNOME 3.36.8
+- Ubuntu 23.04 running GNOME 44.0
 - Parrot OS 5.3 running Sway 1.7

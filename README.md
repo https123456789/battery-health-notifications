@@ -13,13 +13,13 @@ Note: If your desktop environment isn't tested, follow the testing section too.
 
 ## Installing 
 
-	$ wget https://raw.githubusercontent.com/eduardonbneves/battery-health-notifications/main/battery-health-notifications
+    $ wget https://raw.githubusercontent.com/eduardonbneves/battery-health-notifications/main/battery-health-notifications
 
-        $ sudo apt-get install libnotify-bin
+    $ sudo apt-get install libnotify-bin
         
-        $ chmod +x battery-health-notifications
+    $ chmod +x battery-health-notifications
         
-        $ sudo mv battery-health-notifications /usr/bin/ 
+    $ sudo mv battery-health-notifications /usr/bin/ 
 
 Then, add the line below to your crontab using `crontab -e` (if you followed the first method, this is not necessary):
 
